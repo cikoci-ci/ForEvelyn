@@ -1,0 +1,341 @@
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    /* background-image: url(/img/bg_web.jpg); */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 140px;
+    position: absolute;
+    /* untuk transisi yg smoth */
+}
+
+.container-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+}
+
+@media (max-width: 414px) {
+    .container-header {
+        width: 30vm;
+        z-index: 300;
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    background: rgb(230, 200, 200);
+}
+
+@media (max-width: 414px) {
+    .container {
+        padding: 3px 7px;
+    }
+}
+
+.left img {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-left: 20px;
+    justify-content: flex-end;
+}
+
+@media (max-width: 414px) {
+    .left img {
+        gap: 17px;
+        padding-left: 7px;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.kanan {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-right: 15px;
+    justify-content: center;
+    top: 0;
+}
+
+.kanan a {
+    text-decoration: none;
+}
+
+.hamburger {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+@media (max-width: 414px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 4px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+@media (max-width: 414px) {
+    .kanan {
+        gap: 10px;
+        padding-right: 5px;
+    }
+}
+
+.item {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media (max-width: 414px) {
+    .item {
+        gap: 1.4px;
+    }
+}
+
+.item img {
+    width: 50px;
+    height: 50px;
+    /* box-shadow: 0 4px 15px rgba(0,0,0,0.3); */
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 414px) {
+    .item img {
+        width: 19px;
+        height: 19px;
+    }
+}
+
+.item span {
+    /* position: absolute; */
+    bottom: -25px;
+    left: 50%;
+    /* transform: translateX(-50%); */
+    font-size: 14px;
+    color: #333;
+    opacity: 0;
+    transition: opcity 0.3s ease, bottom 0.3s ease;
+    margin-top: 5px;
+    white-space: nowrap;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.item:hover img {
+    transform: translateY(-10px);
+}
+
+.item:hover span {
+    opacity: 1;
+    bottom: -10px;
+}
+
+.konten-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 10px;
+    /* padding: 30px; */
+    width: 90%;
+    margin: 20px auto;
+    background-color: rgb(248, 245, 245);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.konten_1_kiri h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+}
+
+.konten_1_kiri h1 {
+    font-family: "Mark Script", cursive;
+    font-size: 30px;
+}
+
+.konten_1_kiri h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+#home {
+    scroll-margin-top: 160px;
+}
+
+.body-konten2 {
+    background-color: #ceabab;
+}
+
+.konten2_awalan {
+    padding-top: 20px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* padding-left: 20px; */
+}
+
+.konten2_awalan h1{
+    text-align: center;
+}
+
+.konten2_kepala {
+    background-color: #ceabab;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.konten_2 {
+    display: flex;
+    gap: 30;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.kartu_lucu {
+    background-color: #fff;
+    width: 280px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+/* .kartu_lucu:hover {
+    transform: translateY(-80px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+} */
+
+.kartu_lucu img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background: #f1baba;
+    border-radius: 20px;
+}
+
+.kartu_lucu h1 {
+    font-size: 50px;
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.kartu_lucu h4 {
+    font-size: 20px;
+    color: #3a2d2d;
+    font-weight: normal;
+    margin-top: 5px;
+    font-family: "Mark Script", cursive;
+}
+
+.kartu_lucu button:hover {
+    background-color: #f78db1;
+}
+
+#for_you {
+    scroll-margin-top: 100px;
+}
+
+.konten3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: #cea2a2;
+    gap: 30px;
+}
+
+
+.konten3 h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding-top: -10;
+}
+
+.konten3-gambar a {
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #dabfbf;
+}
+
+.konten3-gambar img {
+    width: 400px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.konten3-gambar img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    background-image: url(konten3_img/gambar_surat1-removebg-preview.png);
+}
+
+.konten3-gambar img:active {
+    transform: scale(0.95);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+#message {
+    scroll-margin-top: 100px;
+}
+
+.logo_surat {
+    width: 360px;
+    height: 360px;
+    background-image: url(konten3_img/gamar_surat-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    transition: bacground-image 0.5s ease;
+    cursor: pointer;
+}
+
+.logo_surat:hover {
+    /* filter: brightness(0.8) blur(1px); */
+    transition: all 0.6s ease;
+    background-image: url(konten3_img/gambar_surat1-removebg-preview.png);
+}
